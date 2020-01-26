@@ -13,7 +13,7 @@ $( document ).ready(function() {
     var imageBanner =$("#icon-main");
     var todayDate =$("#today-date");
     var jumbo = $("#jumbo");
-    var greenCity = $(".city-button");
+
     var dayOne = $("#day-one");
     var dayTwo = $("#day-two");
     var dayThree = $("#day-three");
@@ -59,7 +59,7 @@ $( document ).ready(function() {
             speedBanner.text(response.wind.speed);
             todayDate.text(moment().format('MMMM Do YYYY'));
             var imageCode = response.weather[0].icon;
-            var imageSrc = "http://openweathermap.org/img/wn/"+imageCode+"@2x.png"
+            var imageSrc = "https://openweathermap.org/img/wn/"+imageCode+"@2x.png"
             imageBanner.attr("src",imageSrc);
             var lat = response.coord.lat;
             var lon = response.coord.lon;
