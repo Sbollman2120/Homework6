@@ -63,7 +63,7 @@ $( document ).ready(function() {
             imageBanner.attr("src",imageSrc);
             var lat = response.coord.lat;
             var lon = response.coord.lon;
-            uvUrl ="https:/api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=f6df7e32fa8a0e7d8e049359ebaa2318"
+            uvUrl ="https://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=f6df7e32fa8a0e7d8e049359ebaa2318"
             $.ajax({
                 url:  uvUrl,
                 method: "GET"
@@ -89,19 +89,19 @@ $( document ).ready(function() {
             dayFourDate.text(moment().add('4','d').format('MMMM Do YYYY'))
             dayFiveDate.text(moment().add('5','d').format('MMMM Do YYYY'))
             var imageCodeOne = response.list[7].weather[0].icon;
-            var imageSrcOne = "http://openweathermap.org/img/wn/"+imageCodeOne+"@2x.png"
+            var imageSrcOne = "https://openweathermap.org/img/wn/"+imageCodeOne+"@2x.png"
             dayOneImage.attr("src",imageSrcOne);
             var imageCodeTwo = response.list[15].weather[0].icon;
-            var imageSrcTwo = "http://openweathermap.org/img/wn/"+imageCodeTwo+"@2x.png"
+            var imageSrcTwo = "https://openweathermap.org/img/wn/"+imageCodeTwo+"@2x.png"
             dayTwoImage.attr("src",imageSrcTwo);
             var imageCodeThree = response.list[23].weather[0].icon;
-            var imageSrcThree = "http://openweathermap.org/img/wn/"+imageCodeThree+"@2x.png"
+            var imageSrcThree = "https://openweathermap.org/img/wn/"+imageCodeThree+"@2x.png"
             dayThreeImage.attr("src",imageSrcThree);
             var imageCodeFour = response.list[31].weather[0].icon;
-            var imageSrcFour = "http://openweathermap.org/img/wn/"+imageCodeFour+"@2x.png"
+            var imageSrcFour = "https://openweathermap.org/img/wn/"+imageCodeFour+"@2x.png"
             dayFourImage.attr("src",imageSrcFour);
             var imageCodeFive = response.list[39].weather[0].icon;
-            var imageSrcFive = "http://openweathermap.org/img/wn/"+imageCodeFive+"@2x.png"
+            var imageSrcFive = "https://openweathermap.org/img/wn/"+imageCodeFive+"@2x.png"
             dayFiveImage.attr("src",imageSrcFive);
             dayOne.attr("class","card d-block");
             dayTwo.attr("class","card d-block");
@@ -145,11 +145,11 @@ $( document ).ready(function() {
             speedBanner.text(response.wind.speed);
             todayDate.text(moment().format('MMMM Do YYYY'));
             var imageCode = response.weather[0].icon;
-            var imageSrc = "http://openweathermap.org/img/wn/"+imageCode+"@2x.png"
+            var imageSrc = "https://openweathermap.org/img/wn/"+imageCode+"@2x.png"
             imageBanner.attr("src",imageSrc);
             var lat = response.coord.lat;
             var lon = response.coord.lon;
-            uvUrl ="https:/api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=f6df7e32fa8a0e7d8e049359ebaa2318"
+            uvUrl ="https://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=f6df7e32fa8a0e7d8e049359ebaa2318"
             $.ajax({
                 url:  uvUrl,
                 method: "GET"
@@ -175,19 +175,19 @@ $( document ).ready(function() {
             dayFourDate.text(moment().add('4','d').format('MMMM Do YYYY'))
             dayFiveDate.text(moment().add('5','d').format('MMMM Do YYYY'))
             var imageCodeOne = response.list[7].weather[0].icon;
-            var imageSrcOne = "http://openweathermap.org/img/wn/"+imageCodeOne+"@2x.png"
+            var imageSrcOne = "https://openweathermap.org/img/wn/"+imageCodeOne+"@2x.png"
             dayOneImage.attr("src",imageSrcOne);
             var imageCodeTwo = response.list[15].weather[0].icon;
-            var imageSrcTwo = "http://openweathermap.org/img/wn/"+imageCodeTwo+"@2x.png"
+            var imageSrcTwo = "https://openweathermap.org/img/wn/"+imageCodeTwo+"@2x.png"
             dayTwoImage.attr("src",imageSrcTwo);
             var imageCodeThree = response.list[23].weather[0].icon;
-            var imageSrcThree = "http://openweathermap.org/img/wn/"+imageCodeThree+"@2x.png"
+            var imageSrcThree = "https://openweathermap.org/img/wn/"+imageCodeThree+"@2x.png"
             dayThreeImage.attr("src",imageSrcThree);
             var imageCodeFour = response.list[31].weather[0].icon;
-            var imageSrcFour = "http://openweathermap.org/img/wn/"+imageCodeFour+"@2x.png"
+            var imageSrcFour = "https://openweathermap.org/img/wn/"+imageCodeFour+"@2x.png"
             dayFourImage.attr("src",imageSrcFour);
             var imageCodeFive = response.list[39].weather[0].icon;
-            var imageSrcFive = "http://openweathermap.org/img/wn/"+imageCodeFive+"@2x.png"
+            var imageSrcFive = "https://openweathermap.org/img/wn/"+imageCodeFive+"@2x.png"
             dayFiveImage.attr("src",imageSrcFive);
             dayOne.attr("class","card d-block");
             dayTwo.attr("class","card d-block");
